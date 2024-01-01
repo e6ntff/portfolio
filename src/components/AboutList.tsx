@@ -2,30 +2,28 @@ import React from 'react';
 
 interface Props {
 	title: string;
-	items: string[] | string;
+	items: string[];
 }
 
 const AboutList: React.FC<Props> = ({ title, items }) => {
 	return (
 		<div
-			className='flex flex-col text-blue-600 font-sans uppercase font-semibold 
-			gap-1 sm:gap-2 lg:gap-4'
+			className='flex flex-col text-blue-600 uppercase
+			gap-2 sm:gap-4 lg:gap-8
+			px-1 sm:px-2 lg:px-4 
+			py-1 sm:py-2 lg:py-4'
 		>
 			<p
-				className='uppercase 
-				text-md sm:text-xl lg:text-3xl'
+				className='text-blue-600 font-semibold font-montserrat uppercase
+				text-xl sm:text-3xl lg:text-5xl'
 			>
 				{title}
 			</p>
-			{typeof items === 'string' ? (
-				<p className='text-xs sm:text-base lg:text-xl'>{items}</p>
-			) : (
-				<ul className='text-xs sm:text-base lg:text-xl'>
-					{items.map((item) => (
-						<ul key={item}>— {item}</ul>
-					))}
-				</ul>
-			)}
+			<ul className='text-sm sm:text-lg lg:text-2xl font-montserrat'>
+				{items.map((item) => (
+					<ul key={item}>— {item}</ul>
+				))}
+			</ul>
 		</div>
 	);
 };
