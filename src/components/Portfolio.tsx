@@ -19,8 +19,8 @@ const Portfolio: React.FC = () => {
 				{projects.map((project) => (
 					<li
 						key={project.title}
-						className='flex even:flex-row-reverse justify-between 
-						h-20 sm:h-40 lg:h-80'
+						className='flex even:flex-row-reverse odd:text-right justify-between 
+						h-32 sm:h-64 lg:h-96'
 					>
 						<div
 							className={`grid grid-cols-${project.grid[0]} grid-rows-${project.grid[1]} grid-flow-dense rounded-xl 
@@ -29,14 +29,14 @@ const Portfolio: React.FC = () => {
 							{project.pictures.map((pic) => (
 								<img
 									key={pic.pic}
-									className='object-cover w-full h-full hover:scale-110 transition-all'
+									className='object-cover w-full h-full hover:scale-125 transition-all'
 									style={{ gridArea: pic.area }}
 									src={pic.pic}
 									alt='project screenshot'
 								/>
 							))}
 						</div>
-						<div className='flex flex-col gap-1 sm:gap-2 lg:gap-4'>
+						<div className='flex flex-col gap-1 sm:gap-2 lg:gap-4 w-1/2'>
 							<p className='text-sm sm:text-lg lg:text-2xl font-montserrat text-blue-700 font-semibold uppercase'>
 								{project.title}
 							</p>

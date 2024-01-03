@@ -1,8 +1,8 @@
-import pic1_1 from '../media/screenshot-1-1.png';
-import pic1_2 from '../media/screenshot-1-2.png';
-import pic1_3 from '../media/screenshot-1-3.png';
+import pic1_1 from '../media/expense-manager-1.gif';
+import pic1_2 from '../media/expense-manager-2.gif';
+import pic1_3 from '../media/expense-manager-3.gif';
 
-import pic2_1 from '../media/screenshot-2-1.png';
+import pic2_1 from '../media/tic-tac-toe-1.gif';
 
 export const description = {
 	skills: {
@@ -14,7 +14,7 @@ export const description = {
 export const projects = [
 	{
 		title: 'expense manager',
-		description: 'jahdaskd',
+		description: 'App where you can store your expenses, divide it by categories and manage',
 		grid: [2,2],
 		pictures: [
 			{ pic: pic1_1, area: '1/1/2/2' },
@@ -24,13 +24,14 @@ export const projects = [
 	},
 	{
 		title: 'tic tac toe',
-		description: 'asdad',
+		description: 'You can play with other player on the same device or with computer',
 		grid: [1,1],
 		pictures: [
 			{
 				pic: pic2_1,
-				area: '',
+				area: '1/1/2/2',
 			},
 		],
 	},
+	
 ];
